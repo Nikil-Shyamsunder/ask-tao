@@ -1,5 +1,4 @@
 import streamlit as st
-import app_backend 
 import app_rag_backend
 
 st.set_page_config(page_title="Ask Tao", page_icon='favicon.png')
@@ -24,10 +23,10 @@ if prompt := st.chat_input("How does the Tao Te Ching reccommend approaching rel
         message_placeholder = st.empty()
         full_response = ""
 
-        content = app_backend.get_content([
-                {"role": m["role"], "content": m["content"]}
-                for m in st.session_state.messages
-            ])
+        # content = app_rag_backend.get_content([
+        #         {"role": m["role"], "content": m["content"]}
+        #         for m in st.session_state.messages
+        #     ])
         #print(st.session_state.messages[-1]['content'])
         content = app_rag_backend.get_response(st.session_state.messages[-1]['content'])
         
