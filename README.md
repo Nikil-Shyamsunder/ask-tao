@@ -14,6 +14,6 @@ Many readers struggle to comprehend the Tao Te Ching due to its brevity and comp
 
 ## Getting Started
 
-1. **Clone the repository**: `git clone https://github.com/Nikil-Shyamsunder/tao-te-ching-chat-bot.git`
+1. **Clone the repository**: `git clone https://github.com/Nikil-Shyamsunder/ask-tao.git`
 2. **Install dependencies**: Navigate to the project directory and run `pip install -r requirements.txt`
 3. **Run the application**: Execute `streamlit run app.py` to start the chat bot and begin your exploration of the Tao Te Ching.
